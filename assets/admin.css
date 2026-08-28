@@ -1,0 +1,57 @@
+/* Settings page only. Light polish over the WP admin default. */
+
+.reading-progress-settings .rp-intro {
+	max-width: 46rem;
+	font-size: 13px;
+	color: #50575e;
+}
+
+.reading-progress-settings .rp-card {
+	max-width: 46rem;
+	margin: 16px 0;
+	padding: 4px 20px 12px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.04 );
+}
+
+.reading-progress-settings .rp-card h2 {
+	margin-top: 14px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #f0f0f1;
+	font-size: 14px;
+}
+
+.reading-progress-settings .rp-hint {
+	margin: 10px 0 0;
+	font-size: 12px;
+	color: #646970;
+}
+
+.reading-progress-settings .form-table th {
+	width: 180px;
+}
+
+.reading-progress-settings .rp-reference h3 {
+	margin-bottom: 4px;
+	font-size: 13px;
+}
+
+.reading-progress-settings .rp-attrs {
+	margin: 0 0 8px;
+	padding-left: 18px;
+	list-style: disc;
+	font-size: 13px;
+}
+
+.reading-progress-settings .rp-reference code {
+	font-size: 12px;
+}
+
+.reading-progress-settings .rp-reference > p code {
+	display: inline-block;
+	padding: 4px 8px;
+	background: #f6f7f7;
+	border-radius: 4px;
+}
