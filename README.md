@@ -74,8 +74,10 @@ Stored as one option array, `reading_progress_settings`, removed on uninstall. A
 
 ## Updates
 
-Self-updates from GitHub releases via the bundled [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) (v5.6), pointed at `github.com/aidanashby/reading-progress`. Dormant until a tagged release exists there; then updates appear on the Plugins screen like any other. Update the repo slug in `reading-progress.php` if the repo lives elsewhere.
+Self-updates from GitHub releases via the bundled [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) (v5.7), pointed at `github.com/aidanashby/reading-progress`. Updates appear on the Plugins screen like any other.
+
+To release: bump the `Version:` header and `READING_PROGRESS_VERSION`, add a `## x.y.z` section to CHANGELOG.md, commit, then push a tag such as `v0.1.3`. The Release workflow checks the versions match the tag and attaches `reading-progress.zip` to the release.
 
 ## Status
 
-Code complete. `php -l` passes on all PHP files (PHP 8.4), `progress-bar.js` parses clean. Not yet run inside WordPress — shortcode output, the Divi selector, settings save and the update flow still need functional testing on the remote dev site before a release is tagged.
+The update flow was checked on a local WordPress site on 28 September 2026: the plugin activates, finds its GitHub release and zip, and shows its icon. Shortcode output, the Divi selector and settings save have no recorded functional test.
