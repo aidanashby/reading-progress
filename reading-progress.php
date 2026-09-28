@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Reading Progress
  * Description:        Reading time shortcode and a scroll-driven reading progress bar. Adds no styles of its own beyond what the bar needs to function.
- * Version:           0.1.1
+ * Version:           0.1.2
  * Requires at least:  6.0
  * Requires PHP:       7.4
  * Author:            Aidan Ashby
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'READING_PROGRESS_VERSION', '0.1.1' );
+define( 'READING_PROGRESS_VERSION', '0.1.2' );
 define( 'READING_PROGRESS_FILE', __FILE__ );
 define( 'READING_PROGRESS_URL', plugin_dir_url( __FILE__ ) );
 define( 'READING_PROGRESS_OPTION', 'reading_progress_settings' );

@@ -2,6 +2,11 @@
 
 All notable changes to Reading Progress are documented here.
 
+## 0.1.2
+
+- Plugin icon on the Plugins and Updates screens.
+- Bundled Plugin Update Checker updated from 5.6 to 5.7.
+
 ## 0.1.1
 
 - Uninstall now also removes the Plugin Update Checker library's own bookkeeping (`external_updates-reading-progress` option and the `puc_cron_check_updates-reading-progress` cron event), which it left behind on plugin delete before this fix.
