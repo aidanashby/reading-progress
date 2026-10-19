@@ -200,7 +200,7 @@ function reading_progress_render_settings_page() {
 		return;
 	}
 	$s   = reading_progress_get_settings();
-	$opt = esc_attr( READING_PROGRESS_OPTION );
+	$opt = READING_PROGRESS_OPTION;
 	?>
 	<div class="wrap reading-progress-settings">
 		<h1><?php esc_html_e( 'Reading Progress', 'reading-progress' ); ?></h1>
@@ -217,26 +217,26 @@ function reading_progress_render_settings_page() {
 				<table class="form-table" role="presentation">
 					<tr>
 						<th scope="row"><label for="rp-wpm"><?php esc_html_e( 'Words per minute', 'reading-progress' ); ?></label></th>
-						<td><input name="<?php echo $opt; ?>[wpm]" id="rp-wpm" type="number" min="1" step="1" value="<?php echo esc_attr( $s['wpm'] ); ?>" class="small-text"></td>
+						<td><input name="<?php echo esc_attr( $opt ); ?>[wpm]" id="rp-wpm" type="number" min="1" step="1" value="<?php echo esc_attr( $s['wpm'] ); ?>" class="small-text"></td>
 					</tr>
 					<tr>
 						<th scope="row"><label for="rp-label"><?php esc_html_e( 'Reading time label', 'reading-progress' ); ?></label></th>
 						<td>
-							<input name="<?php echo $opt; ?>[label]" id="rp-label" type="text" value="<?php echo esc_attr( $s['label'] ); ?>" class="regular-text" placeholder="<?php esc_attr_e( 'e.g. Reading time: ', 'reading-progress' ); ?>">
+							<input name="<?php echo esc_attr( $opt ); ?>[label]" id="rp-label" type="text" value="<?php echo esc_attr( $s['label'] ); ?>" class="regular-text" placeholder="<?php esc_attr_e( 'e.g. Reading time: ', 'reading-progress' ); ?>">
 							<p class="description"><?php esc_html_e( 'Text before the number. Leave blank for none. Include a trailing space if you want one.', 'reading-progress' ); ?></p>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row"><label for="rp-postfix"><?php esc_html_e( 'Reading time postfix', 'reading-progress' ); ?></label></th>
 						<td>
-							<input name="<?php echo $opt; ?>[postfix]" id="rp-postfix" type="text" value="<?php echo esc_attr( $s['postfix'] ); ?>" class="regular-text">
+							<input name="<?php echo esc_attr( $opt ); ?>[postfix]" id="rp-postfix" type="text" value="<?php echo esc_attr( $s['postfix'] ); ?>" class="regular-text">
 							<p class="description"><?php esc_html_e( 'Text after the number for 2 or more minutes. Shown as: 11 minutes reading time', 'reading-progress' ); ?></p>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row"><label for="rp-postfix-singular"><?php esc_html_e( 'Reading time postfix (singular)', 'reading-progress' ); ?></label></th>
 						<td>
-							<input name="<?php echo $opt; ?>[postfix_singular]" id="rp-postfix-singular" type="text" value="<?php echo esc_attr( $s['postfix_singular'] ); ?>" class="regular-text">
+							<input name="<?php echo esc_attr( $opt ); ?>[postfix_singular]" id="rp-postfix-singular" type="text" value="<?php echo esc_attr( $s['postfix_singular'] ); ?>" class="regular-text">
 							<p class="description"><?php esc_html_e( 'Text after the number when it is exactly 1. Shown as: 1 minute reading time', 'reading-progress' ); ?></p>
 						</td>
 					</tr>
@@ -250,25 +250,25 @@ function reading_progress_render_settings_page() {
 					<tr>
 						<th scope="row"><?php esc_html_e( 'Orientation', 'reading-progress' ); ?></th>
 						<td>
-							<label><input type="radio" name="<?php echo $opt; ?>[bar_orientation]" value="horizontal" <?php checked( $s['bar_orientation'], 'horizontal' ); ?>> <?php esc_html_e( 'Horizontal', 'reading-progress' ); ?></label><br>
-							<label><input type="radio" name="<?php echo $opt; ?>[bar_orientation]" value="vertical" <?php checked( $s['bar_orientation'], 'vertical' ); ?>> <?php esc_html_e( 'Vertical', 'reading-progress' ); ?></label>
+							<label><input type="radio" name="<?php echo esc_attr( $opt ); ?>[bar_orientation]" value="horizontal" <?php checked( $s['bar_orientation'], 'horizontal' ); ?>> <?php esc_html_e( 'Horizontal', 'reading-progress' ); ?></label><br>
+							<label><input type="radio" name="<?php echo esc_attr( $opt ); ?>[bar_orientation]" value="vertical" <?php checked( $s['bar_orientation'], 'vertical' ); ?>> <?php esc_html_e( 'Vertical', 'reading-progress' ); ?></label>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row"><label for="rp-thickness"><?php esc_html_e( 'Thickness (px)', 'reading-progress' ); ?></label></th>
 						<td>
-							<input name="<?php echo $opt; ?>[bar_thickness]" id="rp-thickness" type="number" min="1" step="1" value="<?php echo esc_attr( $s['bar_thickness'] ); ?>" class="small-text">
+							<input name="<?php echo esc_attr( $opt ); ?>[bar_thickness]" id="rp-thickness" type="number" min="1" step="1" value="<?php echo esc_attr( $s['bar_thickness'] ); ?>" class="small-text">
 							<p class="description"><?php esc_html_e( 'Height when horizontal, width when vertical.', 'reading-progress' ); ?></p>
 						</td>
 					</tr>
 					<tr>
 						<th scope="row"><label for="rp-color"><?php esc_html_e( 'Colour', 'reading-progress' ); ?></label></th>
-						<td><input name="<?php echo $opt; ?>[bar_color]" id="rp-color" type="text" value="<?php echo esc_attr( $s['bar_color'] ); ?>" class="reading-progress-color" data-default-color="#000000"></td>
+						<td><input name="<?php echo esc_attr( $opt ); ?>[bar_color]" id="rp-color" type="text" value="<?php echo esc_attr( $s['bar_color'] ); ?>" class="reading-progress-color" data-default-color="#000000"></td>
 					</tr>
 					<tr>
 						<th scope="row"><label for="rp-selector"><?php esc_html_e( 'Tracked element selector', 'reading-progress' ); ?></label></th>
 						<td>
-							<input name="<?php echo $opt; ?>[bar_selector]" id="rp-selector" type="text" value="<?php echo esc_attr( $s['bar_selector'] ); ?>" class="large-text code">
+							<input name="<?php echo esc_attr( $opt ); ?>[bar_selector]" id="rp-selector" type="text" value="<?php echo esc_attr( $s['bar_selector'] ); ?>" class="large-text code">
 							<p class="description"><?php esc_html_e( 'The bar tracks scroll progress through the first element matching this selector.', 'reading-progress' ); ?></p>
 						</td>
 					</tr>
@@ -419,13 +419,13 @@ function reading_progress_bar_shortcode( $atts ) {
 		$fill_style = sprintf(
 			'width:%dpx;height:100%%;background:%s;transform:scaleY(0);transform-origin:top;transition:transform .1s linear;',
 			$thickness,
-			esc_attr( $color )
+			$color
 		);
 	} else {
 		$fill_style = sprintf(
 			'height:%dpx;width:100%%;background:%s;transform:scaleX(0);transform-origin:left;transition:transform .1s linear;',
 			$thickness,
-			esc_attr( $color )
+			$color
 		);
 	}
 
@@ -433,6 +433,6 @@ function reading_progress_bar_shortcode( $atts ) {
 		'<div class="reading-progress-bar" data-rp-selector="%1$s" data-rp-orientation="%2$s"><div class="reading-progress-bar__fill" style="%3$s"></div></div>',
 		esc_attr( $selector ),
 		esc_attr( $orientation ),
-		$fill_style
+		esc_attr( $fill_style )
 	);
 }
