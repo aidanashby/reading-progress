@@ -80,4 +80,4 @@ To release: bump the `Version:` header and `READING_PROGRESS_VERSION`, add a `##
 
 ## Status
 
-The update flow was checked on a local WordPress site on 28 September 2026: the plugin activates, finds its GitHub release and zip, and shows its icon. Shortcode output, the Divi selector and settings save have no recorded functional test.
+The update flow was checked on a local WordPress site on 28 September 2026: the plugin activates, finds its GitHub release and zip, and shows its icon. Shortcode output works. The Divi selector and settings save have no recorded functional test.
