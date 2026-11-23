@@ -2,6 +2,11 @@
 
 All notable changes to Reading Progress are documented here.
 
+## 0.1.3
+
+- Output is now escaped where it is printed, on the settings page and in the progress bar shortcode. The output looks the same.
+- The release zip no longer includes `wp-plugin-check.md`, a development file.
+
 ## 0.1.2
 
 - Plugin icon on the Plugins and Updates screens.
